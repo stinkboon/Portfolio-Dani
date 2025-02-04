@@ -151,6 +151,7 @@ h2 {
 }
 
 .welcome img {
+    position: relative;
     width: 100%;
     max-width: 300px;
     height: fit-content;
@@ -509,6 +510,9 @@ a {
         width: 100%;
         padding: 5px;
     }
+    .welcome {
+        width: 100%;;
+    }
 }
 
 /* tablet */
@@ -516,6 +520,10 @@ a {
     .example {
         width: 100%;
         padding: 10px;
+    }
+
+    .welcome {
+        width: calc(100% - 300px);
     }
 }
 
