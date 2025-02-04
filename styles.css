@@ -1,6 +1,6 @@
 body {
     background-color: #F0F0F0;
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Roboto, Montserrat-Regular', sans-serif;
     margin: 0;
 }
 
@@ -19,6 +19,21 @@ header {
 header nav a:hover {
     font-weight: 600;
     color: #ffffff;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom:0;
+    margin: 20px;
+    margin-right: 20px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.scroll-to-top-show {
+    display: flex;
 }
 
 .navigation {
