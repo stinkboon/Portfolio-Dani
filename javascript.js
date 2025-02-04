@@ -183,7 +183,7 @@ function initSoftSkillsAnimation() {
         const sectionTop = softSkillsSection.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (!hasAnimated && sectionTop < windowHeight * 0.8) {
+        if (!hasAnimated && sectionTop < windowHeight * 0.5) {
             listItems.forEach((item, index) => {
                 setTimeout(() => item.classList.add("visible"), index * 500);
             });
