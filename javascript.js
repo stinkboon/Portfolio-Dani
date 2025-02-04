@@ -165,8 +165,7 @@ function scrollToTop() {
 function hideAfterScroll() {
     toggleClassByScroll('header', 'navigation-color', 140);
     toggleClassByScroll('last-visit', 'last-visit-color', 10);
-
-    toggleClassByScroll('scroll-to-top', 'scroll-to-top-show', 0);
+    toggleClassByScroll('scroll-to-top', 'scroll-to-top-show', 100);
 }
 
 function toggleClassByScroll(elementId, className, scrollY) {

@@ -22,7 +22,6 @@ header nav a:hover {
 }
 
 .scroll-to-top {
-    display: none;
     position: fixed;
     right: 0;
     bottom:0;
@@ -30,11 +29,24 @@ header nav a:hover {
     margin-right: 20px;
     z-index: 5;
     cursor: pointer;
+    display: none;
+    transition: scrollfade-reverse 0.8s ease;
 }
 
 .scroll-to-top-show {
     display: flex;
+    bottom: -10%;
+    opacity: 0;
+    animation: scrollfade 0.8s ease-in forwards;
+    animation-delay: 0s;
 }
+
+/*.scroll-to-top-fade {
+    bottom:  -10%;
+    opacity: 0;
+    animation: tocenter 0.8s ease-in forwards;
+    animation-delay: 0.3s;
+}*/
 
 .navigation {
     padding: 15px;
@@ -473,6 +485,20 @@ a {
         left: 0;
         opacity: 1;
         top: 0;
+    }
+}
+
+@keyframes  scrollfade {
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@keyframes  scrollfade-reverse {
+    to {
+        opacity: 0;
+        bottom: -10%;
     }
 }
 
